@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+
+    <style>
+        body {
+            padding-top: 50px;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .main__container {
+            width: 90vw;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        h3 {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .choices {
+            margin-bottom: 20px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main__container">
+        <h2>Question #{{ item_number }}</h2>
+        <h3>{{ question }}</h3>
+
+        <div class="choices">
+            <form action="/exam" method="POST">
+                <input type="hidden" name="item_number" value="{{ item_number }}" />
+                {{#choices}}
+                    <label>
+                        <input type="radio" name="answer" value="{{ letter }}" required />
+                        {{ choice }}
+                    </label>
+                    <br>
+                {{/choices}}
+                <button type="submit">NEXT</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

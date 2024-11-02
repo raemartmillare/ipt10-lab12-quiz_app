@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Exam</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+
+    <style>
+        body {
+            padding-top: 50px;
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .main__container {
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h2, h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .start-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .start-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main__container">
+        <h2>Pre-Exam</h2>
+        <h3>Hi {{ complete_name }} &lt;{{ email }}&gt;!</h3>
+
+        <a href="/exam" class="start-button">Click here to begin the exam</a>
+    </div>
+</body>
+</html>

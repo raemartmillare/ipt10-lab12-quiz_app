@@ -1,0 +1,60 @@
+{
+    "questions": [
+      {
+        "item_number": "1",
+        "question": "What is the primary focus of Integrative Programming and Technologies (IPT)?",
+        "choices": [
+          "A) Enhancing software efficiency",
+          "B) Combining different programming paradigms and technologies",
+          "C) Developing hardware solutions",
+          "D) Improving user interfaces"
+        ],
+        "correct_answer": "B"
+      },
+      {
+        "item_number": "2",
+        "question": "Which of the following is a key benefit of IPT?",
+        "choices": [
+          "A) Increased compatibility between systems",
+          "B) Reduced development time",
+          "C) Enhanced scalability",
+          "D) All of the above"
+        ],
+        "correct_answer": "D"
+      },
+      {
+        "item_number": "3",
+        "question": "Which programming paradigm is commonly integrated in IPT?",
+        "choices": [
+          "A) Object-oriented programming",
+          "B) Functional programming",
+          "C) Procedural programming",
+          "D) All of the above"
+        ],
+        "correct_answer": "D"
+      },
+      {
+        "item_number": "4",
+        "question": "What role do APIs play in Integrative Programming and Technologies?",
+        "choices": [
+          "A) They enhance graphical user interfaces.",
+          "B) They allow different software systems to communicate.",
+          "C) They provide security features.",
+          "D) They manage databases."
+        ],
+        "correct_answer": "B"
+      },
+      {
+        "item_number": "5",
+        "question": "Which technology is often associated with IPT for building scalable applications?",
+        "choices": [
+          "A) Cloud computing",
+          "B) Virtual reality",
+          "C) Blockchain",
+          "D) None of the above"
+        ],
+        "correct_answer": "A"
+      }
+    ]
+  }
+  
